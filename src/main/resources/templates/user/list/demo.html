@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table border="1">
+		<tr>
+			<td>Id:</td>
+			<td>Sum:</td>
+		</tr>
+		<th:block th:each="item: ${list}">
+			<tr>
+				<td>[[${item.product.id}]]</td>
+				<td>[[${item.sum}]]</td>
+			</tr>
+		</th:block>
+	</table>
+</body>
+</html>
